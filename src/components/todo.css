@@ -1,0 +1,35 @@
+.all{
+    height: 100vh !important;
+    width: 100vw !important;
+}
+.buttonSection {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75%;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding-bottom: 10px;
+}
+ul {
+    max-height: 90% !important;
+    max-width: 100% !important;
+    overflow-y: scroll !important;
+}
+li{
+    max-width: 100% !important;
+    list-style: none;
+}
+.buttonsLI{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding:  10px 0px!important;
+}
+@media screen and (max-width: 480px) {
+    .buttonSection {
+        height: 82% !important;
+    }
+  }
