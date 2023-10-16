@@ -21,6 +21,18 @@ li{
     max-width: 100% !important;
     list-style: none;
 }
+
+.deleteAll{
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
 .buttonsLI{
     display: flex !important;
     flex-direction: row !important;
@@ -28,8 +40,20 @@ li{
     align-items: center !important;
     padding:  10px 0px!important;
 }
+
+
 @media screen and (max-width: 480px) {
     .buttonSection {
         height: 82% !important;
+    }
+    .deleteAll{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #f8f9fa;
+        padding: 10px;
     }
   }

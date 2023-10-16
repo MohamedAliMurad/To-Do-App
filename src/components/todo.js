@@ -50,6 +50,9 @@ export default function ToDo() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newTodo = e.target[0].value;
+        if (!newTodo) {
+            return; // don't add empty todos
+        }
         addTodo(newTodo);
         e.target[0].value = "";
     };
@@ -71,6 +74,7 @@ export default function ToDo() {
                         class="btn btn-primary m-1 border-light "
                     >Add</button>
                     <button
+                        type="button"
                         onClick={deleteSelectedTodos}
                         className="btn btn-danger m-1 btn-sm "
                     >Delete Selected</button>
@@ -117,7 +121,7 @@ export default function ToDo() {
                 </ul>
                 <button
                     onClick={deleteAll}
-                    className="btn btn-danger p-2 border-light mt-3"
+                    className="btn btn-danger p-2 border-light mt-3 deleteAll"
                 >Delete All</button>
             </div>
 
